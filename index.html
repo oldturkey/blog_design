@@ -1,0 +1,691 @@
+   <!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>设计吧</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/lineicons.css" rel="stylesheet">
+    <link href="css/zabuto_calendar.min.css" rel="stylesheet">
+    <script src="js/Chart.js" type="text/javascript"></script>
+    </head>
+    <body >
+        <section id="container">
+            <header class="header black-bg">
+                <div class="sidebar-toggle-box">
+                  <div id="toggleList" class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+                </div>
+                <a href="index.html" class="logo">
+                    <b>灵性设计</b>
+                </a>
+                <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">您还有4项待完成任务</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">西塘设计主页</div>
+                                        <div class="percent">40%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">数据库更新</div>
+                                        <div class="percent">60%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">博客项目开发</div>
+                                        <div class="percent">80%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">项目服务待收款</div>
+                                        <div class="percent">70%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                            <span class="sr-only">70% Complete (Important)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#" style="color:#666;">所有任务...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">您还有5条新消息</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="css/image/firend1.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">诗涵</span>
+                                    <span class="time">刚刚..</span>
+                                    </span>
+                                    <span class="message">
+                                        Hi ,可以加个好友么 ?
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="css/image/firend2.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Davied</span>
+                                    <span class="time">40分钟前</span>
+                                    </span>
+                                    <span class="message">
+                                     Hi, 可以帮我设计一个logo么？
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="css/image/firend3.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">大圣</span>
+                                    <span class="time">2小时前</span>
+                                    </span>
+                                    <span class="message">
+                                        很喜欢你的文章！
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="css/image/firend4.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">LinPan</span>
+                                    <span class="time">4小时前</span>
+                                    </span>
+                                    <span class="message">
+                                        请帮我解决一个疑问！
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#" style="color:#666;">更多消息...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout " href="login.html">退出登陆</a></li>
+            	</ul>
+            </div>
+            </header>
+            <aside>
+                <div id="sidebar" class="nav-collapse" tabindex="5000" style="overflow:hidden; outline: none; margin-left:0;">
+                <ul class="sidebar-menu" id="nav-accordion" style="display:block;">
+                    <p class="centered">
+                        <a href="#">
+                            <img src="css/image/team2.jpg" class="img-circle" width="80">
+                        </a>
+                    </p>    
+                    <h5 class="centered"> Old Chicken</h5>
+                    <h2 class="home"><span class="glyphicon glyphicon-home"></span> 进入首页</h2>
+                    <ul class="homeLink">
+                        <li><a href="#">项目展示</a></li>
+                        <li><a href="#">访客记录</a></li>
+                        <li><a href="#">日程计划</a></li>
+                        <li><a href="#">友情链接</a></li>
+                    </ul>
+                    <h2 class="bord"><a href="#"><span class="fa fa-file-text-o "></span> 精彩博文</a></h2>
+                    <h2 class="bord"><a href="#"><span class="fa fa-commenting-o"></span> 给我留言</a></h2>
+                    <h2 class="bord"><a href="#"><span class="fa fa-heart-o"></span> 创作支持</a></h2>
+                    <h2 class="bord"><a href="#"><span class="fa fa-book"></span> 学习资料</a></h2>
+                    <h2 class="bord"><a href="#"><span class="fa fa-github"></span> 源码地址</a></h2>
+                    <button class="btn rss col-md-8 col-sm-8 col-xs-8 col-md-offset-2 
+                                   col-sm-offset-2 col-xs-offset-2"><span class="fa fa-rss"></span> SSN</button> 
+                </ul>
+                </div>
+            </aside>
+            <section id="main-content" style="margin-left:210px">
+                <section class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-9 main-chart">
+                            <div class="row mtbox">
+                                <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                                    <div class="box1">
+                                        <span class="li_heart"></span>
+                                        <h3>1039</h3>
+                                    </div>
+                                        <p>24小时内，有39人为您的网页点赞！</p>
+                                </div>
+                                <div class="col-md-2 col-sm-2 box0">
+                                    <div class="box1">
+                                        <span class="li_cloud"></span>
+                                        <h3>+48</h3>
+                                    </div>
+                                        <p>本周您提交了48个新的文件到云储存.</p>
+                                </div>
+                                <div class="col-md-2 col-sm-2 box0">
+                                    <div class="box1">
+                                        <span class="li_stack"></span>
+                                        <h3>13</h3>
+                                    </div>
+                                        <p>您的邮箱中有13条未读邮件.</p>
+                                </div>
+                                <div class="col-md-2 col-sm-2 box0">
+                                    <div class="box1">
+                                        <span class="li_news"></span>
+                                        <h3>10+</h3>
+                                    </div>
+                                        <p>有超过10条新的订阅文章未读...</p>
+                                </div>
+                                <div class="col-md-2 col-sm-2 box0">
+                                    <div class="box1">
+                                        <span class="li_data"></span>
+                                        <h3>greet!</h3>
+                                    </div>
+                                        <p>您的服务器内存充足，运行流畅.</p>
+                                </div>
+                  	         </div>
+                            <div class="row banner">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="white-header">
+                                            <h5>灵感创意</h5>
+                                        </div>
+                                    <div id="myCarousel" class="carousel slide">
+                                      <ol class="carousel-indicators">
+                                        <li class="active" data-target='#myCarousel' data-slide-to='0'></li>
+                                        <li data-target='#myCarousel' data-slide-to='1'></li>
+                                        <li data-target='#myCarousel' data-slide-to='2'></li>
+                                      </ol>
+                                      <div class="carousel-inner">
+                                        <div class="item active" >
+                                          <img src="css/image/banner1.png" class="img-responsive"/>
+                                        </div>
+                                        <div class="item">
+                                          <img src="css/image/banner2.png" class="img-responsive"/>
+                                        </div>
+                                        <div class="item">
+                                          <img src="css/image/banner3.png" class="img-responsive"/>
+                                        </div>
+                                      </div>
+                                      <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                      </a>
+                                      <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                      </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt">
+                                <div class="col-md-4 col-sm-4 mb">
+                                    <div class="white-panel pn donut-chart">
+                                        <div class="white-header">
+                                            <h5>服务器负载</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-6 goleft">
+                                                <p><i class="fa fa-database"></i> 70%</p>
+                                            </div>
+                                        </div>
+                                        <canvas id="serverstatus01" height="120" width="120" style="width: 120px; height: 120px;"></canvas>
+                                        <script>
+                                            var doughnutData = [
+                                                    {
+                                                        value: 70,
+                                                        color:"#9FF33D"
+                                                    },
+                                                    {
+                                                        value : 30,
+                                                        color : "#fdfdfd"
+                                                    }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+                                        </script>
+                                    </div><!-- --/grey-panel ---->
+                                </div>
+                                <div class="col-md-4 col-sm-4 mb">
+                                    <div class="white-panel pn">
+                                        <div class="white-header">
+                                            <h5>最佳 作品</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-6 goleft">
+                                                <p><i class="fa fa-heart"></i> 122</p>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6"></div>
+                                        </div>
+                                        <div class="centered">
+                                                <img src="css/image/product.png" width="120">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb">
+                                    <!-- WHITE PANEL - TOP USER -->
+                                    <div class="white-panel pn">
+                                        <div class="white-header">
+                                            <h5>最佳支持者</h5>
+                                        </div>
+                                        <p style="margin:25px 0 0 10px;"><img src="css/image/firend4.jpg" class="img-circle" width="80"></p>
+                                        <p><b>LinPan</b></p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="small mt">会员年龄</p>
+                                                <p>2012</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="small mt">总消费</p>
+                                                <p>$ 47,60</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb">
+                                    <div class="instagram-panel pn">
+                                        <i class="fa fa-instagram fa-4x"></i>
+                                        <p>相册<br>
+								        </p>
+                                        <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart" style="color:#FF7373;"></i> 49</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb">
+                                    <div class="blogList pn">
+                                        <i class="fa fa-file-text-o fa-4x"></i>
+                                        <p>博文<br>
+								        </p>
+                                        <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-chart">
+                              <!--CUSTOM CHART START -->
+                              <div class="border-head">
+                                  <h3>访问指数</h3>
+                              </div>
+                              <div class="custom-bar-chart" >
+                                  <ul class="y-axis">
+                                      <li><span>10.0</span></li>
+                                      <li><span>8.0</span></li>
+                                      <li><span>6.0</span></li>
+                                      <li><span>4.0</span></li>
+                                      <li><span>2.0</span></li>
+                                      <li><span>0</span></li>
+                                  </ul>
+                                  <div class="bar">
+                                      <div class="title">JAN</div>
+                                      <div class="value tooltips" data-original-title="8.5" data-toggle="tooltip" data-placement="top" style="height: 85%;"></div>
+                                  </div>
+                                  <div class="bar ">
+                                      <div class="title">FEB</div>
+                                      <div class="value tooltips" data-original-title="5.0" data-toggle="tooltip" data-placement="top" style="height: 50%;"></div>
+                                  </div>
+                                  <div class="bar ">
+                                      <div class="title">MAR</div>
+                                      <div class="value tooltips" data-original-title="6.0" data-toggle="tooltip" data-placement="top" style="height: 60%;"></div>
+                                  </div>
+                                  <div class="bar ">
+                                      <div class="title">APR</div>
+                                      <div class="value tooltips" data-original-title="4.5" data-toggle="tooltip" data-placement="top" style="height: 45%;"></div>
+                                  </div>
+                                  <div class="bar">
+                                      <div class="title">MAY</div>
+                                      <div class="value tooltips" data-original-title="3.2" data-toggle="tooltip" data-placement="top" style="height: 32%;"></div>
+                                  </div>
+                                  <div class="bar ">
+                                      <div class="title">JUN</div>
+                                      <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top" style="height: 62%;"></div>
+                                  </div>
+                                  <div class="bar">
+                                      <div class="title">JUL</div>
+                                      <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top" style="height: 75%;"></div>
+                                  </div>
+                              </div>
+                              <!--custom chart end-->
+					       </div>
+                        </div>
+                        <div class="col-lg-3 ds" >
+                            <h3>通 知</h3>
+                            <div class="desc">
+                                <div class="thumb">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p>
+                                        <muted>2 分钟前</muted>
+                                        <br>
+                                        <a href="#">Summer cat</a>
+                                         订阅了您的博客推文...
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                           <div class="desc">
+                                <div class="thumb">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p>
+                                        <muted>59 分钟前</muted>
+                                        <br>
+                                        <a href="#">DJ 阳光的小明</a>
+                                         购买了一个logo设计需求...
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p>
+                                        <muted>2 小时前</muted>
+                                        <br>
+                                        <a href="#">卡拉迦迪斯</a>
+                                         向您提出了一个疑问...
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p>
+                                        <muted>6 小时前</muted>
+                                        <br>
+                                        <a href="#">misaka去年夏天</a>
+                                         收藏了您的相册...
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p>
+                                        <muted>10 小时前</muted>
+                                        <br>
+                                        <a href="#">匿名用户</a>
+                                         购买了一年的订阅...
+                                    <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3>团 队 成 员</h3>
+                            <div class="desc">
+                                <div class="thumb">
+                                   <img class="img-circle" src="css/image/team1.jpg" width="40px" height="40px" align>
+                                </div>
+                                <div class="details" style="padding-left:20px;">
+                                    <p>
+                                        <a href="#">咸糖妹儿</a>
+                                        <br>
+                                        <muted>优秀的插画设计师...</muted>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                   <img class="img-circle" src="css/image/team2.jpg" width="40px" height="40px" align>
+                                </div>
+                                <div class="details" style="padding-left:20px;">
+                                    <p>
+                                        <a href="#">old Chicken</a>
+                                        <br>
+                                        <muted>勤奋的前端程序猿...</muted>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                   <img class="img-circle" src="css/image/team3.jpg" width="40px" height="40px" align>
+                                </div>
+                                <div class="details" style="padding-left:20px;">
+                                    <p>
+                                        <a href="#">肋条少年</a>
+                                        <br>
+                                        <muted>后台数据库程序员...</muted>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb">
+                                   <img class="img-circle" src="css/image/team4.jpg" width="40px" height="40px" align>
+                                </div>
+                                <div class="details" style="padding-left:20px;">
+                                    <p>
+                                        <a href="#"> 番 目</a>
+                                        <br>
+                                        <muted>UI交互设计师...</muted>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3>博 文 档 案</h3>
+                            <div class="desc">
+                                <div class="thumb file">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                                <div class="details" style="padding-left:10px;">
+                                    <p>- - 2017年 3月 - -</p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb file">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                                <div class="details" style="padding-left:10px;">
+                                    <p>- - 2017年 2月 - -</p>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <div class="thumb file">
+                                    <span class="badge bg-theme">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                                <div class="details" style="padding-left:10px;">
+                                    <p>- - 2017年 1月 - -</p>
+                                    <span>更多..</span>
+                                </div>
+                            </div>
+                            <div id="my-calendar" style="margin-top:20px;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer class="site-footer">
+                    <div class="text-center">
+                        <a href="#"><i class="fa fa-github-alt"> Github -- oldchicken</i></a>&nbsp;
+                        <a href="#"><i class="fa fa-qq"> QQ -- 还不走</i></a>&nbsp;
+                        <a href="#"><i class="fa fa-weixin"> Wechat -- 阿超</i></a>
+                        <a href="index.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+              </div>
+                </footer>
+        </section>
+
+    
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <script src="js/zabuto_calendar.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(document).ready(function(){
+            $('.homeLink li a').hover(function(){   
+                $(this).css("color","white");
+            },function(){
+                $(this).css("color","#6B7386");
+            });
+            (function(){
+            var listflag=($('#sidebar').css('left'));
+               $('#toggleList').click(function(){
+                if(listflag=='0px'){
+                   $('#sidebar').animate({
+                       left:'-370px',
+                       opacity:'0',
+                   });
+                    return listflag="210px";
+                }
+                if(listflag=='210px'){
+                  $('#sidebar').animate({
+                       left:'0',
+                       opacity:'1',
+                   });  
+                    return listflag="0px";
+                }
+                
+            }) 
+               $('#sidebar .home').click(function(){
+                if(listflag=='0px'){
+                   $('#sidebar').animate({
+                       left:'-370px',
+                       opacity:'0',
+                   });
+                    return listflag="210px";
+                }
+                if(listflag=='210px'){
+                  $('#sidebar').animate({
+                       left:'0',
+                       opacity:'1',
+                   });  
+                    return listflag="0px";
+                }
+                
+            }) 
+            })();
+            
+          
+            
+            $(function () { $("[data-toggle='tooltip']").tooltip(); });
+            
+            var eventData = [
+                {"date":"2017-04-21","badge":true,"title":"Example 1"},
+                {"date":"2017-04-09","badge":true,"title":"Example 2"},
+                {"date":"2017-04-05","badge":false,"title":"Example 2"},
+                {"date":"2017-04-27","badge":false,"title":"Example 2"}
+            ];
+            $("#my-calendar").zabuto_calendar({
+                    language: "cn",
+                    data: eventData,
+                    legend: [
+                        {type: "text", label: "博文更新", badge: "00"},
+                        {type: "block", label: "休息日"}
+                    ],
+                    action: function () {
+                        return myDateFunction(this.id, false);
+                    },
+                    action_nav: function () {
+                        return myNavFunction(this.id);
+                    },
+                    cell_border: false,
+                    today: true,
+                  show_days: true,
+                  weekstartson: 0,
+                  nav_icon: {
+                    prev: '<i class="fa fa-chevron-circle-left"></i>',
+                    next: '<i class="fa fa-chevron-circle-right"></i>'
+                  }
+                });
+            
+            function myDateFunction(id, fromModal) {
+                $("#date-popover").hide();
+                if (fromModal) {
+                    $("#" + id + "_modal").modal("hide");
+                }
+                var date = $("#" + id).data("date");
+                var hasEvent = $("#" + id).data("hasEvent");
+                if (hasEvent && !fromModal) {
+                    return false;
+                }
+                $("#date-popover-content").html('You clicked on date ' + date);
+                $("#date-popover").show();
+                return true;
+            }
+
+            function myNavFunction(id) {
+                $("#date-popover").hide();
+                var nav = $("#" + id).data("navigation");
+                var to = $("#" + id).data("to");
+                console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+            }
+
+        });
+    </script>
+        
+    </body>
+</html>
